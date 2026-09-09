@@ -1,3 +1,4 @@
+
 # AMAN — Multi-label Toxic Speech Detection in Moroccan Darija
 
 > A multi-label NLP system for detecting toxic speech in Moroccan Darija using transformer models and knowledge distillation.
@@ -26,19 +27,24 @@ Darija Teacher
 Knowledge Distillation
       ↓
 DistilBERT Student
+````
 
-Technologies
-Python
-PyTorch
-Hugging Face Transformers
-NLP
-Streamlit
-Scikit-learn
-Project Context
+## Technologies
+
+* Python
+* PyTorch
+* Hugging Face Transformers
+* NLP
+* Streamlit
+* Scikit-learn
+
+## Project Context
 
 Team project (4 members) developed as part of the AI & Data Science engineering curriculum.
 
-Repository Structure
+## Repository Structure
+
+```text
 .
 ├── app.py
 ├── predictor.py
@@ -49,11 +55,41 @@ Repository Structure
     ├── student/
     ├── teacher/
     └── teacher_star/
+```
 
-Highlights
-Multi-label toxic-speech classification
-Moroccan Darija NLP
-Transformer-based modeling
-Knowledge distillation
-Smaller and faster student model
-Streamlit inference application
+## Highlights
+
+* Multi-label toxic-speech classification
+* Moroccan Darija NLP
+* Transformer-based modeling
+* Knowledge distillation
+* Smaller and faster student model
+* Streamlit inference application
+
+## Notes
+
+The repository contains the inference code, supporting utilities, training artifacts, and model configuration files used throughout the project.
+
+````
+
+### Also set the GitHub **About** section
+
+**Description:**
+```text
+Multi-label toxic speech detection for Moroccan Darija using transformers and knowledge distillation.
+````
+
+**Topics:**
+
+```text
+python
+pytorch
+nlp
+transformers
+huggingface
+machine-learning
+deep-learning
+darija
+streamlit
+knowledge-distillation
+```
