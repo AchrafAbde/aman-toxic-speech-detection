@@ -18,24 +18,27 @@ The project explores transformer-based classification and knowledge distillation
 
 ## Architecture
 
-XLM-R Teacher → Darija Teacher → Knowledge Distillation → DistilBERT Student
-
-## Technologies
-
-- Python
-- PyTorch
-- Hugging Face Transformers
-- NLP
-- Streamlit
-- Scikit-learn
-
-## Project Context
-
-Team project developed as part of the Master's/engineering AI & Data Science curriculum.
-
-## Repository Structure
-
 ```text
+XLM-R Teacher
+      ↓
+Darija Teacher
+      ↓
+Knowledge Distillation
+      ↓
+DistilBERT Student
+
+Technologies
+Python
+PyTorch
+Hugging Face Transformers
+NLP
+Streamlit
+Scikit-learn
+Project Context
+
+Team project (4 members) developed as part of the AI & Data Science engineering curriculum.
+
+Repository Structure
 .
 ├── app.py
 ├── predictor.py
@@ -43,3 +46,14 @@ Team project developed as part of the Master's/engineering AI & Data Science cur
 ├── utils.py
 ├── requirements.txt
 └── models/
+    ├── student/
+    ├── teacher/
+    └── teacher_star/
+
+Highlights
+Multi-label toxic-speech classification
+Moroccan Darija NLP
+Transformer-based modeling
+Knowledge distillation
+Smaller and faster student model
+Streamlit inference application
