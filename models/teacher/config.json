@@ -1,0 +1,26 @@
+{
+  "train_path": "/kaggle/input/datasets/adilbouhoum/train-dataset/train.csv",
+  "output_dir": "/kaggle/working/teacher_output/",
+  "model_name": "xlm-roberta-base",
+  "max_len": 256,
+  "num_labels": 6,
+  "dropout": 0.1,
+  "epochs": 3,
+  "batch_size": 32,
+  "accum_steps": 1,
+  "lr": 2e-05,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "max_grad_norm": 1.0,
+  "fp16": true,
+  "val_size": 0.1,
+  "seed": 42,
+  "label_cols": [
+    "toxic",
+    "severe_toxic",
+    "obscene",
+    "threat",
+    "insult",
+    "identity_hate"
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.4926,
+    "val_loss": 0.3843,
+    "val_f1": 0.8,
+    "val_auc": 0.9023,
+    "threshold": 0.4
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.3722,
+    "val_loss": 0.3711,
+    "val_f1": 0.8153,
+    "val_auc": 0.9138,
+    "threshold": 0.45
+  }
+]

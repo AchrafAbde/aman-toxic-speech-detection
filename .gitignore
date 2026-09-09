@@ -1,0 +1,34 @@
+# ── Modèles lourds (stockés sur HuggingFace Hub) ─────────────────────────────
+*.pt
+*.bin
+*.safetensors
+
+# ── Modèles sklearn (stockés sur HuggingFace Hub) ────────────────────────────
+models/ovr_balanced.joblib
+models/tfidf_vectorizer.joblib
+
+# ── Cache Python ──────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.Python
+
+# ── Environnements virtuels ───────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── HuggingFace cache local ───────────────────────────────────────────────────
+.cache/
+
+# ── Données scrapées (trop volumineuses pour GitHub) ─────────────────────────
+Scraper/data/
+*.csv
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+secrets.toml
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
