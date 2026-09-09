@@ -1,29 +1,45 @@
----
-title: AMANE Toxicity Detector
-emoji: 🛡️
-colorFrom: purple
-colorTo: green
-sdk: streamlit
-sdk_version: 1.32.0
-app_file: app.py
-pinned: true
----
+# AMAN — Multi-label Toxic Speech Detection in Moroccan Darija
 
-# AMANE — Détection de discours toxiques en Darija
+> A multi-label NLP system for detecting toxic speech in Moroccan Darija using transformer models and knowledge distillation.
 
-Projet Master 4 IA & Data Science — Architecture Knowledge Distillation multi-label pour la détection de toxicité en Darija marocain.
+## Overview
 
-## Modèles déployés
+AMAN is a machine learning project focused on toxic-speech detection in Moroccan Darija.
 
-| Phase | Modèle | Params | Macro F1 |
-|---|---|---|---|
-| Phase 1 | Benchmark OVR LogReg | — | — |
-| Phase 1 | XLM-R Teacher (EN) | 278M | 0.623 |
-| Phase 2 | XLM-R Teacher* (Darija) | 278M | 0.815 |
-| Phase 3 | Student DistilBERT (Darija) | 66M | 0.895 |
+The project explores transformer-based classification and knowledge distillation to build a smaller and faster inference model.
+
+## Results
+
+- Fine-tuned an XLM-RoBERTa teacher model on approximately 160,000 comments.
+- Achieved a Macro F1 score of 0.623 with the initial teacher model.
+- Trained a Darija teacher model reaching a Macro F1 of 0.815.
+- Distilled the model into a DistilBERT student model reaching a Macro F1 of 0.895.
+- Built an inference application with Streamlit.
 
 ## Architecture
 
-```
-Jigsaw EN → XLM-R Teacher → DarLoad (masked loss) → Teacher* → pseudo-labels → Student DistilBERT
-```
+XLM-R Teacher → Darija Teacher → Knowledge Distillation → DistilBERT Student
+
+## Technologies
+
+- Python
+- PyTorch
+- Hugging Face Transformers
+- NLP
+- Streamlit
+- Scikit-learn
+
+## Project Context
+
+Team project developed as part of the Master's/engineering AI & Data Science curriculum.
+
+## Repository Structure
+
+```text
+.
+├── app.py
+├── predictor.py
+├── test_teacher.py
+├── utils.py
+├── requirements.txt
+└── models/
